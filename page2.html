@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title>Page 2</title>
+	<script>
+		function validate(){
+			var image_name=document.form2.image.value;
+			console.log(image_name)
+			if(image_name == ""){
+				image_error.innerHTML="&emsp; Please select an image!";
+				return false;
+
+			}
+			else
+				return true;
+		}
+	</script>
+</head>
+<body>
+	<form name="form2" action="page3.html" method="get" onsubmit="return validate()">
+		Please choose one image - <span id="image_error" style="color: red"> *</span><br><br>
+		<table>
+			<tr align="center">
+				<td><input type="radio" name="image" value="a.jpg" id="image">&emsp;Image 1</td>
+				<td><input type="radio" name="image" value="b.jpg" id="image">&emsp;Image 2</td>
+				<td><input type="radio" name="image" value="c.jpg" id="image">&emsp;Image 3</td>
+				<td><input type="radio" name="image" value="d.jpg" id="image">&emsp;Image 4</td>
+				<td><input type="radio" name="image" value="e.jpg" id="image">&emsp;Image 5</td>
+			</tr>
+			<tr>
+				<td><img src="a.jpg"></td>
+				<td><img src="b.jpg"></td>
+				<td><img src="c.jpg"></td>
+				<td><img src="d.jpg"></td>
+				<td><img src="e.jpg"></td>
+			</tr>
+		</table>
+		<br><br><input type="submit" value="Submit">
+	</form>
+
+</body>
+</html>
+
+
+
+
+<!-- file:///Users/mJ/Desktop/Convonix_assignments/Assignment%201/Page2-3/testing.html -->

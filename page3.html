@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>Page 3</title>
+  <script>
+    window.onload = function () {
+      var url = location.href;
+      var url_extract = url.split('=');
+      var iamge_name = url_extract[1];
+      document.getElementById('imageBox').src = iamge_name;
+      console.log("this is url ",url);
+      console.log("this is image name ",iamge_name);
+    }
+  </script>
+</head>
+
+<body>
+
+  <form name="form1" action="next.html" method="get">
+    <table align="center">
+     <th>
+      <h1>Thank You!</h1>
+    </th>
+    <tr>
+      <td><img id="imageBox"></td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
