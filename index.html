@@ -313,12 +313,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<a href="http://localhost/Eshopper/">Go to E-Shopper website</a>
 	
 <script>
-	function getDeviceDetaisl() {
-		userAgent=navigator.userAgent;
-		user_aget.innerHTML = navigator.userAgent;
-		platform.innerHTML = navigator.platform;
-
-	}
+		function getDeviceDetaisl() {
+			document.getElementById("user_agent").innerHTML = navigator.userAgent;;
+			document.getElementById("platform").innerHTML = navigator.platform;
+		}
 </script>
 <br>
 User agent: <span id="user_agent"></span><br>
