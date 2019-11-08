@@ -311,5 +311,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</form> 
 	<br>
 	<a href="http://localhost/Eshopper/">Go to E-Shopper website</a>
+	
+	User agent: <span id="user_agent"></span>
+Platform: <span id="platform"></span>
+
+<script>
+	function getDeviceDetaisl() {
+		user_aget.innerHTML = navigator.userAgent;
+		platform.innerHTML = navigator.platform;
+
+	}
+</script>
+
+<button onclick="getDeviceDetaisl()">Get Device Detaisl</button>>
 </body>
 </html>
